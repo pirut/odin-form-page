@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Matemasie&display=swap");
+
+.custom-shape-divider-top-1724719993 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(90deg);
+}
+
+:root {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+}
