@@ -1,20 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Matemasie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Matemasie&family=Nerko+One&display=swap");
 
-.custom-shape-divider-top-1724719993 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(90deg);
+/*Font Utils*/
+.nerko-one-regular {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
-:root {
+.matemasie-regular {
     font-family: "Matemasie", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/*Main CSS*/
+:root {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+
 body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #446cad;
+}
+
+.bgImg {
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    transform: scale(150%);
+    top: 20%;
+    left: 0;
+}
+
+.curve {
+    display: flex;
+    flex-shrink: 0;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./wave-haikei.svg);
+    aspect-ratio: 150/900;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.mainArea {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    height: 100vh;
+}
+
+.mainDiv {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #446cad;
+    height: 100vh;
+}
+
+label {
+    color: darkgray;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
