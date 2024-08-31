@@ -1,1 +1,9 @@
-<svg id="visual" viewBox="0 0 150 900" width="150" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M51 900L58.8 850C66.7 800 82.3 700 88.3 600C94.3 500 90.7 400 86.7 300C82.7 200 78.3 100 76.2 50L74 0L150 0L150 50C150 100 150 200 150 300C150 400 150 500 150 600C150 700 150 800 150 850L150 900Z" fill="#446cad" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+<svg id="visual" viewBox="0 0 150 900" width="150" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<defs>
+    <filter id="dropshadow">
+        <feDropShadow dx="-4" dy="0" stdDeviation="1" flood-opacity="0.1"/>
+    </filter>
+</defs>
+<path filter="url(#dropshadow)" d="M51 900L58.8 850C66.7 800 82.3 700 88.3 600C94.3 500 90.7 400 86.7 300C82.7 200 78.3 100 76.2 50L74 0L150 0L150 50C150 100 150 200 150 300C150 400 150 500 150 600C150 700 150 800 150 850L150 900Z" fill="#446cad" stroke-linecap="round" stroke-linejoin="miter"></path>
+
+</svg>
