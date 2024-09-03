@@ -16,28 +16,52 @@
             />
         </div>
         <div class="mainArea">
+            <div class="logoHeader">
+                <img class="logoImg" src="./book.svg" />
+                <h1 class="mainLogo">Books</h1>
+            </div>
             <div class="curve"></div>
             <div class="mainDiv">
                 <h2>Try out my fake service</h2>
                 <h2>I promise it's safe</h2>
-                <div>
-                    <h3>Sign up now!</h3>
-                    <form action="post">
-                        <div class="formRow">
-                            <div class="inputContainer"><label for="first-name" class="inputLabel">First Name</label><input type="text" /></div>
-                            <div class="inputContainer"><label for="last-name" class="inputLabel">Last Name</label><input type="text" /></div>
+                <div class="formModal">
+                    <div class="formDiv">
+                        <h3>Sign up now!</h3>
+                        <div class="childFormDiv">
+                            <form action="post">
+                                <div class="formRow">
+                                    <div class="inputContainer">
+                                        <label for="user-first-name" class="inputLabel">First Name</label>
+                                        <input id="user-first-name" type="text" />
+                                    </div>
+                                    <div class="inputContainer">
+                                        <label for="user-last-name" class="inputLabel">Last Name</label>
+                                        <input id="user-last-name" type="text" />
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="inputContainer">
+                                        <label for="user-email" class="inputLabel">Email</label>
+                                        <input id="user-email" type="email" />
+                                    </div>
+                                    <div class="inputContainer">
+                                        <label for="user-phone-number" class="inputLabel">Phone Number</label>
+                                        <input id="user-phone-number" type="text" />
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="inputContainer">
+                                        <label for="user-password" class="inputLabel">Password</label>
+                                        <input id="user-password" type="text" />
+                                    </div>
+                                    <div class="inputContainer">
+                                        <label for="user-confirm-password" class="inputLabel">Confirm Password</label>
+                                        <input id="user-confirm-password" type="text" />
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="formRow">
-                            <div class="inputContainer"><label for="user-email" class="inputLabel">Email</label><input type="email" /></div>
-                            <div class="inputContainer"><label for="user-phone-number" class="inputLabel">Phone Number</label><input type="text" /></div>
-                        </div>
-                        <div class="formRow">
-                            <div class="inputContainer"><label for="user-password" class="inputLabel">Password</label><input type="text" /></div>
-                            <div class="inputContainer">
-                                <label for="user-confirm-password" class="inputLabel">Confirm Password</label><input type="text" />
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
                 <button>Create Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>

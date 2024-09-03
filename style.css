@@ -14,10 +14,15 @@
 }
 
 /*Main CSS*/
-:root {
+* {
+    padding: 0px;
+    margin: 0px;
     font-family: "Matemasie", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+:root {
     overflow: hidden;
     --shadow-color: 0deg 0% 0%;
     --shadow-elevation-low: -0.5px 0.5px 0.8px hsl(var(--shadow-color) / 0.1), -0.8px 0.8px 1.3px -1.2px hsl(var(--shadow-color) / 0.1),
@@ -38,13 +43,30 @@ body {
     background-color: #446cad;
 }
 
+.logoHeader {
+    position: absolute;
+    left: 0;
+    top: 25vh;
+    z-index: -1;
+    width: clamp(33vw, 33vw, 35vw);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(76, 76, 76, 0.412);
+}
+
+.logoImg {
+    height: 25vh;
+}
+
 .bgImg {
+    transition: all 0.3s linear;
     height: 100vh;
     position: absolute;
     z-index: -1;
     transform: scale(150%);
     top: 20%;
-    left: 0;
+    left: -10%;
 }
 
 .curve {
@@ -58,7 +80,6 @@ body {
     background-position: center;
     background-size: cover;
     height: 100vh;
-    filter: drop-shadow(4px 4px 1px);
 }
 
 .mainArea {
@@ -66,7 +87,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60vw;
+    flex-shrink: 0;
+    width: 70vw;
     height: 100vh;
 }
 
@@ -77,6 +99,42 @@ body {
     flex-direction: column;
     background-color: #446cad;
     height: 100vh;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin: 16px;
+}
+
+.childFormDiv {
+}
+
+.formRow {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.formModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    margin-left: 0px;
+    background-color: whitesmoke;
+    box-shadow: var(--shadow-elevation-medium);
+    border: darkgray solid 1px;
+    border-radius: 16px;
 }
 
 label {
