@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Matemasie&family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Matemasie&family=Nerko+One&family=Playwrite+CU:wght@100..400&display=swap");
 
 /*Font Utils*/
 .nerko-one-regular {
@@ -11,6 +11,19 @@
     font-family: "Matemasie", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.playwrite-cu {
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
+    font-size: 25vh !important;
+    margin-top: -40px;
 }
 
 /*Main CSS*/
@@ -43,6 +56,30 @@ body {
     background-color: #446cad;
 }
 
+.credit {
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+div p a {
+    transition: all 0.2s;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+}
+
+div p a:hover {
+    transition: all 0.2s;
+    color: gray;
+    font-size: larger;
+}
+
 .logoHeader {
     position: absolute;
     left: 0;
@@ -52,11 +89,17 @@ body {
     padding: 25px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(76, 76, 76, 0.412);
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.812);
+    box-shadow: var(--shadow-elevation-low);
 }
 
-.logoImg {
-    height: 25vh;
+.mainLogo {
+    margin-top: -50px;
+    margin-bottom: -15px;
+    color: black;
+    font-size: 3rem;
 }
 
 .bgImg {
