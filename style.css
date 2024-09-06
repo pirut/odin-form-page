@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Matemasie&family=Nerko+One&family=Playwrite+CU:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
 
 /*Font Utils*/
+.suse {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
 .nerko-one-regular {
     font-family: "Nerko One", cursive;
     font-weight: 400;
@@ -67,14 +75,14 @@ body {
     border-radius: 5px;
 }
 
-div p a {
+.credit a {
     transition: all 0.2s;
     color: black;
     font-family: "Courier New", Courier, monospace;
     text-decoration: none;
 }
 
-div p a:hover {
+.credit a:hover {
     transition: all 0.2s;
     color: gray;
     font-size: larger;
@@ -107,8 +115,6 @@ div p a:hover {
     height: 100vh;
     position: absolute;
     z-index: -1;
-    transform: scale(150%);
-    top: 20%;
     left: -10%;
 }
 
@@ -128,7 +134,7 @@ div p a:hover {
 .mainArea {
     margin: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-shrink: 0;
     width: 70vw;
@@ -136,10 +142,12 @@ div p a:hover {
 }
 
 .mainDiv {
+    padding-top: 24px;
     position: relative;
     display: flex;
     flex: 1;
     flex-direction: column;
+    align-items: center;
     background-color: #446cad;
     height: 100vh;
 }
@@ -152,7 +160,9 @@ div p a:hover {
     margin: 16px;
 }
 
-.childFormDiv {
+.titleText {
+    font-size: 3rem;
+    align-self: flex-start;
 }
 
 .formRow {
@@ -170,14 +180,46 @@ div p a:hover {
 
 .formModal {
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
     margin: 25px;
     margin-left: 0px;
+    margin-bottom: 0px;
     background-color: whitesmoke;
     box-shadow: var(--shadow-elevation-medium);
-    border: darkgray solid 1px;
+    border: none;
     border-radius: 16px;
+}
+
+.modalButtonWrapper {
+    margin-top: 12vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.createButton {
+    transition: all 0.2s;
+    font-size: 1rem;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    border: none;
+    box-shadow: var(--shadow-elevation-medium);
+}
+
+.createButton:hover {
+    transition: all 0.2s;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+.createButton:active {
+    transition: all 0.2s;
+    box-shadow: var(--shadow-elevation-low);
 }
 
 label {

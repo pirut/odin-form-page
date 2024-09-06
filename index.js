@@ -8,5 +8,5 @@ function parallax(event) {
     x = (window.innerWidth - event.pageX) / 70;
     y = (window.innerHeight - event.pageY) / 70;
 
-    bgImg.style.transform = `translateX(${x}px) translateY(${y}px) scale(150%)`;
+    bgImg.style.transform = `translateX(${x}px) translateY(${y}px) scale(125%)`;
 }
