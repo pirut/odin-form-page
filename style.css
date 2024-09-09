@@ -147,7 +147,7 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background-color: #446cad;
     height: 100vh;
 }
@@ -162,7 +162,6 @@ body {
 
 .titleText {
     font-size: 3rem;
-    align-self: flex-start;
 }
 
 .formRow {
@@ -178,8 +177,25 @@ body {
     flex-direction: column;
 }
 
+.inputContainer input {
+    font-family: "SUSE", sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-bottom: solid darkgray 2px;
+    border-radius: 2px;
+}
+
+.inputContainer input:valid {
+    border-bottom: solid black 2px;
+}
+
+.inputContainer input:invalid {
+    border-bottom: solid red 2px;
+}
+
 .formModal {
     display: flex;
+    width: 75%;
     justify-content: baseline;
     align-items: center;
     padding-left: 30px;
@@ -188,14 +204,13 @@ body {
     margin: 25px;
     margin-left: 0px;
     margin-bottom: 0px;
-    background-color: whitesmoke;
+    background-color: white;
     box-shadow: var(--shadow-elevation-medium);
     border: none;
     border-radius: 16px;
 }
 
 .modalButtonWrapper {
-    margin-top: 12vh;
     display: flex;
     align-items: flex-end;
 }
@@ -205,6 +220,7 @@ body {
     font-size: 1rem;
     background-color: white;
     padding: 10px;
+    margin-right: 16px;
     border-radius: 10px;
     height: fit-content;
     border: none;
@@ -213,7 +229,7 @@ body {
 
 .createButton:hover {
     transition: all 0.2s;
-    font-size: 1.1rem;
+    transform: scale(105%);
     box-shadow: var(--shadow-elevation-high);
 }
 
