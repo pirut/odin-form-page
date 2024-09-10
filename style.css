@@ -193,6 +193,14 @@ body {
     border-bottom: solid red 2px;
 }
 
+.inputContainer input:focus {
+    border-bottom: solid blue 2px;
+}
+
+.inputContainer input:placeholder-shown {
+    border-bottom: solid darkgray 2px;
+}
+
 .formModal {
     display: flex;
     width: 75%;
